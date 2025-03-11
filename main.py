@@ -277,5 +277,5 @@ async def text_to_speech(request: TextToSpeechRequest):
 hourwise_scheduler.schedule_task(interval_minutes=MINUTE_SCHEDULER)  
 daywise_scheduler.schedule_task(hour=0, minute=0)
 
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8080)
+# if __name__ == "__main__":
+#     uvicorn.run(app, host="0.0.0.0", port=8080)
